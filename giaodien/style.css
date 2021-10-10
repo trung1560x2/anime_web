@@ -2,8 +2,7 @@ body{
     background-color: black;
 }
 .head{
-    border: 1px solid black;
-    
+    border: 1px solid black; 
     height: 100px;
 }
 .home-main-left {
@@ -37,8 +36,9 @@ h3.home-list-title2 {
     font-family: vini-copper;
 }
 .film-list {
-    padding-top: 10px;
     text-align: center;
+    padding: 10px 10px 10px 25px;
+    display: inline-block;
 }
 @media screen and (max-width:767px){
     .film-list .item{
@@ -52,6 +52,7 @@ h3.home-list-title2 {
 
     .item.film_item {
         width: 155px;
+        padding-right: 10px;
         display: inline-block;
     }
     .film-list .item {
@@ -296,3 +297,49 @@ h3.home-list-title2 {
         margin-left: 7px;
         width: 155px;
     }
+    .main_page_title a {
+        color: #6a3;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .main_page_title .h1_main_title, .main_page_title a {
+        color: #6a3;
+        font-size: 22px;
+        font-weight: 600;
+        display: block;
+        margin: 0;
+        padding: 0;
+        line-height: 25px;
+    }
+    .eplist>.listep {
+        height: auto;
+        list-style: none none;
+        margin: 8px 0 0;
+        padding: 0;
+    }
+    .eplist>.listep>li {
+        margin-bottom: 20px;
+    }
+    .listep>li.svep>span.svname {
+        border-bottom: 3px solid #6a3;
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 0 10px 0 0;
+        color: #6fd332;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+    }
+    .listep>li.svep>a.tapphim {
+        color: #999;
+        cursor: pointer;
+        border: 1px solid #424242;
+        border-radius: 3px;
+        padding: 5px 10px;
+        background: #2b2b2b;
+        margin: 2px 4px 2px 2px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 11px;
+    }
+    

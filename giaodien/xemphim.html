@@ -1,0 +1,176 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/thongtinphim.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a class="logo" href="#"><img src="" alt="Logo" /></a>
+            </div>
+          </div>
+          <div class="col">
+            <form role="form" action="" method="GET" class="frm-search">
+              <input
+                type="text"
+                placeholder="Tìm kiếm Anime..."
+                autocomplete="off"
+                class=""
+                name="q"
+                id="q"
+                value=""
+              />
+              <button type="subbmit" class="btnsearch">Tìm kiếm</button>
+              <div id="suggestions">
+                <div class="results"></div>
+                <div class="search-loading">
+                  <i class="fa fa-spinner fa-spin" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col">
+            <a href="#">Thành viên</a>
+          </div>
+          <div class="row"></div>
+          <div class="col">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Anime mùa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Thể loại
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Nhóm dịch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Loại phim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Lọc phim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Bảng xếp hạng phim</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Lịch chiếu phim</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ///////thong tin phim//// -->
+      <h1 class="main_page_title">
+        <a
+          target="_blank"
+          property="v:title"
+          rel="v:url"
+          title="Phim Hanyou no Yashahime: Ni no Shou (Ss2)"
+          href="https://animetvn.com/thong-tin-phim/f6351-hanyou-no-yashahime-ni-no-shou-ss2.html"
+        >
+          Hanyou no Yashahime: Ni no Shou (Ss2) Tập 01
+        </a>
+      </h1>
+      <!-- //////////player////// -->
+      <div class="playfilm">
+        <video
+          id="player"
+          width="600px"
+          height="430px"
+          data-plyr-config='{ "ratio": "16:9" }'
+        >
+          <source
+            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- /////////list ep////// -->
+      <div class="eplist" id="_listep">
+        <ul class="listep" id="sv_0">
+          <li class="svep" id="sv_trailer">
+            <span class="svname">Trailer</span>
+            <a
+              id="ep_171899"
+              class="tapphim"
+              href="#"
+              onclick=""
+              data-title="Hanyou no Yashahime: Ni no Shou (Ss2) tập Preview"
+              title="Xem phim Hanyou no Yashahime: Ni no Shou (Ss2) tập Preview"
+              >Preview</a
+            >
+          </li>
+          <li class="svep" id="sv_bilibili">
+            <span class="svname">Bilibili</span>
+            <a
+              id="ep_172290"
+              class="tapphim playing"
+              href="#"
+              onclick=""
+              data-title="Hanyou no Yashahime: Ni no Shou (Ss2) tập 01"
+              title="Xem phim Hanyou no Yashahime: Ni no Shou (Ss2) tập 01"
+              >01</a
+            ><a
+              id="ep_172407"
+              class="tapphim"
+              href="#"
+              onclick=""
+              data-title="Hanyou no Yashahime: Ni no Shou (Ss2) tập 02"
+              title="Xem phim Hanyou no Yashahime: Ni no Shou (Ss2) tập 02"
+              >02</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- //////end//// -->
+    </div>
+    <script>
+      const player = new Plyr("#player");
+    </script>
+  </body>
+</html>
